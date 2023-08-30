@@ -98,6 +98,11 @@
  
  作答：
  方法一
+    一、建立 GitHub 儲存庫
+    於GitHub瀏覽器上，創建新存儲庫 New Repository
+    
+    二、上傳到 GitHub
+    開啟終端機
     1.開啟欲存放repo的路徑
         cd /Users/laijiaaa1/Documents/swift/remote
     2.初始化建置git
@@ -123,8 +128,8 @@
          
  方法二
     一、建立 GitHub 儲存庫
-     1.於GitHub瀏覽器上，創建新存儲庫 New Repository
-     2.設定自述文件和權限
+     於GitHub瀏覽器上，創建新存儲庫 New Repository
+     設定自述文件和權限
      開啟終端機
      3.開啟欲存放repo的路徑
         $ cd /Users/laijiaaa1/Documents/swift
