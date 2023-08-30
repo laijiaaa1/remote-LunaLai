@@ -95,7 +95,24 @@ lottoNumbers array.
  Now, declare a variable named jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use the if-else statement and the switch statement to complete this requirement separately.
  
  作答：
+ 一、if-else：
+     var jobLevel = 0
+     
+     if jobLevel == 1{
+        print("Member")
+     }else if jobLevel == 2{
+        print("Team Leader")
+     }else if jobLevel == 3{
+        print("Manager")
+     }else if jobLevel == 4{
+        print("Director")
+     }else{
+        print("We don't have this job")
+     }
+ 
+ 二、switch：
     var jobLevel = 0
+ 
     switch jobLevel{
     case 1:
         print("Member")
@@ -110,3 +127,4 @@ lottoNumbers array.
     }
   --------------------------------
 */
+

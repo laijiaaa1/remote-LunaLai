@@ -23,14 +23,15 @@ that we want to give the argument b a default value of 10.
 3. What’s the difference between argument label and parameter name in a function?
  
  作答：
- function 參數的內部名parameter name，用於傳遞給參數的值，一定要有
- function 參數的外部名argument label，用於指示參數的用途，可省略
+ parameter name為function參數的內部名，用於傳遞給參數的值，一定要有
+ argument label為function參數的外部名，用於指示參數的用途，可省略
     例：
     func eat(animal name: String, action eating: String){
         print("\(name),\(eating)")
     }
  
  animal、action為外部參數標籤argument label，提供參數內容
+ 
     例：
     func move(animal name: String, action moving: String){
         print("\(name),\(moving)")

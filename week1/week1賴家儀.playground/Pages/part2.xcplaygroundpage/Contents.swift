@@ -29,6 +29,7 @@
  ● Please solve this problem so that we can put the average in the record system.
    
  作答：
+    將整數轉換為浮點數
     let average = Double((x + y) / 2)
  
  ● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ).
@@ -61,10 +62,10 @@
  7. What is Type Inference in Swift?
  
  作答：
-    在宣告常數或變數時，提供初始值，則可透過值推斷出對應的資料型態，因此代表在宣告時可省略資料型態的指定聲明，系統將自動推斷表達式的適當型態。
+    在宣告常數或變數時，提供初始值則可自動推斷出表達式對應的資料型態，因此代表在宣告時可省略資料型態。
     例：
     let pi = 3.14
-    // 此處沒有為常數值指定資料型態，但依據初始值的浮點數，會自動推斷要宣告的型態是Double
+    // 此處沒有為初始值指定資料型態，但依據初始值的浮點數，會自動推斷要宣告的型態是Double
  --------------------------------
  
  8.What is the issue about this piece of code?
@@ -73,8 +74,8 @@
  
  作答：
     此處phoneNumber會依據初始值，判斷資料型態為Int，
-    問題一、資料類型問題（Int更改為String）
-    var宣告的值為可更改的變數，但需於相同類型的資料型態中更改，題目敘述中初始值判斷為Int，重新修改的值為String，將出現錯誤
+    問題一、資料型態問題（Int更改為String）
+    var宣告的值為可更改的變數，但需於相同類型的資料型態中更改，題目敘述中初始值判斷為Int，欲修改的值為String，將出現錯誤
     問題二、將於輸出的結果顯示為987654321，開頭的0將被整數值省略，因此應使用型態為String之字串來表示電話號碼
         例：
         var phoneNumber = "0987654321"

@@ -39,7 +39,7 @@
  作答：
  搜尋方法：依序尋找陣列中的值，直到索引為5時輸出結果
     for myFriend in myFriends {
-        if myFriend == myFriends[索引值]{
+        if myFriend == myFriends[5]{
             print(myFriend)
         }
     }
@@ -58,36 +58,39 @@
     let lastElement = myFriends.last
   --------------------------------
  
- 9. Please initialize a with keys of type String, value of type Int, and assign it to a variable named .
+ 9. Please initialize a dictionary with keys of type String, value of type Int, and assign it to a variable named myCountryNumber.
  
  作答：
-     var dictionary : [String : Int] = [:]
+     var myCountryNumber : [String : Int] = ["TW":886]
   --------------------------------
  
  10. Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively.
  
  作答：
-    dictionary = ["US" : 1, "GB" : 44, "JP" : 81]
+    myCountryNumber += ["US" : 1, "GB" : 44, "JP" : 81]
   --------------------------------
  
  11. Change the value of ‘GB’ from 44 to 0.
  
  作答：
-    dictionary.updateValue(0, forKey: "GB")
+    myCountryNumber.updateValue(0, forKey: "GB")
   --------------------------------
  
  12. How to declare an empty dictionary?
  
  作答：
     方法一、 var emptyDictionary: [KeyType : ValueType] = [:]
+        例：var emptyDictionary: [String : Int] = [:]
+ 
     方法二、 var emptyDictionary = [KeyType : ValueType]()
+        例：var emptyDictionary = [String : Int]()
   --------------------------------
  
  13. How to remove a key-value pair in a dictionary?
  
  作答：
     dictionary.removeValue(forKey: 鍵值)
- 例：dictionary.removeValue(forKey: "US")
+        例：dictionary.removeValue(forKey: "US")
   --------------------------------
  
  */
