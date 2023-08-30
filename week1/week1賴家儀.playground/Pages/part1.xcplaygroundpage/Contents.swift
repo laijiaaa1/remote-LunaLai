@@ -97,35 +97,53 @@
 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
  
  作答：
+ 方法一
+    1.開啟欲存放repo的路徑
+        cd /Users/laijiaaa1/Documents/swift/remote
+    2.初始化建置git
+        $ git init
+    3.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
+        $ git add .
+    4.提交版本（附加描述更改的提交消息）
+        $ git commit -m -a
+    5.將預設分支從master重命名為main
+        $ git branch -M main
+    6.將遠端存儲庫URL與名稱origin相關聯
+        $ git remote add origin https://github.com/laijiaaa1/remote.git
+    7.將本地主分支推送到名為origin的遠端GitHub存儲庫
+        $ git push -u origin main
+    8.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
+        $ vim README.md
+ 
+    9.  $ git add .
+    10. $ git commit -m -a
+    11. $ git push
+    12.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
+        $ git status
+         
+ 方法二
     一、建立 GitHub 儲存庫
      1.於GitHub瀏覽器上，創建新存儲庫 New Repository
      2.設定自述文件和權限
      開啟終端機
-     3.$ cd /Users/laijiaaa1/Documents/swift
-            //開啟欲存放repo的路徑
-     
-     4.$ git clone https://github.com/laijiaaa1/Remote_LaiChia-I.git
-            //將github上已建立好的資料下載為資料夾
-     
+     3.開啟欲存放repo的路徑
+        $ cd /Users/laijiaaa1/Documents/swift
+     4.將github上已建立好的資料下載為資料夾
+        $ git clone https://github.com/laijiaaa1/Remote_LaiChia-I.git
+
     二、上傳到 GitHub
      1.將欲上傳GitHub之檔案移動至repo指定資料夾內
-     
-     2.$ cd /Users/laijiaaa1/Documents/swift/Remote_LaiChia-i
-            //指定repo路徑資料夾
-     
-     3.$ vim README.md
-            //編輯自述文件內容
-     
-     4.$ git add .
-            //將欲上傳的檔案及修改過後的文件添加入暫存區
-     
-     5.$ git commit -m -a
-            //選擇all提交版本
-     
-     6.$ git push
-            //將本地端資料推送至遠端GitHub儲存庫
-     
-     7.$ git status
-            //檢視資料夾內文件的變化、檢視是否有暫存資料
+     2.指定repo路徑資料夾
+        $ cd /Users/laijiaaa1/Documents/swift/Remote_LaiChia-i
+     3.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
+        $ vim README.md
+     4.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
+        $ git add .
+     5.提交版本（附加描述更改的提交消息）
+        $ git commit -m -a
+     6.將本地端資料推送至遠端GitHub儲存庫
+        $ git push
+     7.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
+        $ git status
  --------------------------------
  */
