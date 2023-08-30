@@ -96,7 +96,6 @@
  
 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
  
- 作答：
  方法一
     一、建立 GitHub 儲存庫
     於GitHub瀏覽器上，創建新存儲庫 New Repository
