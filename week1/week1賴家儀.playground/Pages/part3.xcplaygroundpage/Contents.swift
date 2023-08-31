@@ -1,9 +1,10 @@
 //Part 3: Collection
+
 /*
  1. Please initialize an empty array with String data type and assign it to a variable named myFriends .
  
  作答：
-     var myFriends : [String] = []
+     var myFriends: [String] = []
   --------------------------------
   
  2. According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array at once.
@@ -21,8 +22,13 @@
  4. Because I usually hang out with Kevin, please move Kevin to the beginning of the .myFriends array.
  
  作答：
+ 方法一、
     myFriends.swapAt(2, 0)
     myFriends.swapAt(2, 1)
+ 
+ 方法二、(有想起來的話用這個)
+    let change = myFriends.remove(at: 2)
+    myFriends.insert(change, at: 0)
   --------------------------------
  
  5. Use for...in to print all the friends in myFriends array.
@@ -61,29 +67,40 @@
  9. Please initialize a dictionary with keys of type String, value of type Int, and assign it to a variable named myCountryNumber.
  
  作答：
-     var myCountryNumber : [String : Int] = ["TW":886]
+     var myCountryNumber: [String: Int] = ["TW": 886]
   --------------------------------
  
  10. Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively.
  
  作答：
-    myCountryNumber += ["US" : 1, "GB" : 44, "JP" : 81]
+    let addCountries: [String: Int] = ["US": 1, "GB": 44, "JP": 81]
+    for (key, value) in addCountries {
+        myCountryNumber[key] = value
+    }
   --------------------------------
  
  11. Change the value of ‘GB’ from 44 to 0.
  
  作答：
+ 方法一、
     myCountryNumber.updateValue(0, forKey: "GB")
+ 
+ 方法二、(有想起來的話用這個)
+    myCountryNumber["GB"] = 0
+ 
+ *** 0 & nil 差異：
+    myCountryNumber["GB"] = 0           //["TW": 886, "US": 1, "JP": 81, "GB": 0]
+    myCountryNumber["GB"] = nil         //["TW": 886, "US": 1, "JP": 81]
   --------------------------------
  
  12. How to declare an empty dictionary?
  
  作答：
-    方法一、 var emptyDictionary: [KeyType : ValueType] = [:]
-        例：var emptyDictionary: [String : Int] = [:]
+    方法一、 var emptyDictionary: [KeyType: ValueType] = [:]
+        例：var emptyDictionary: [String: Int] = [:]
  
-    方法二、 var emptyDictionary = [KeyType : ValueType]()
-        例：var emptyDictionary = [String : Int]()
+    方法二、 var emptyDictionary = [KeyType: ValueType]()
+        例：var emptyDictionary = [String: Int]()
   --------------------------------
  
  13. How to remove a key-value pair in a dictionary?
@@ -91,7 +108,8 @@
  作答：
     dictionary.removeValue(forKey: 鍵值)
         例：dictionary.removeValue(forKey: "US")
+    dictionary[鍵值] = nil
+        例：myCountryNumber["US"] = nil
   --------------------------------
  
  */
-

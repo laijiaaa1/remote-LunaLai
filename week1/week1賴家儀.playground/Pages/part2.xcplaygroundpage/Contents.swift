@@ -20,8 +20,8 @@
  3. Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average .
     
  作答：
-    let x : Int = 6
-    let y : Int = 8
+    let x: Int = 6
+    let y: Int = 8
     let average = (x + y) / 2
  --------------------------------
  
@@ -30,7 +30,20 @@
    
  作答：
     將整數轉換為浮點數
-    let average = Double((x + y) / 2)
+    let average = (Double(x + y) / 2)
+ 
+    *** Double((x + y) / 2) 跟 (Double(x + y) / 2) 的結果差異：
+    Double((x + y) / 2)
+        這是將(x + y) / 2計算完成後再進行類型的轉換
+        例：Double((10 + 3) / 2)
+            13 / 2的結果將保留整數6，省略小數，轉換後的結果為6.0
+ 
+    (Double(x + y) / 2)
+        這是將(x + y)先進行類型的轉換，再除以2計算
+        例：(Double(10 + 3) / 2)
+            13轉換後為13.0，再進行(13.0 / 2)計算，結果為6.5
+ 
+        因此此題average應使用 (Double(x + y) / 2) 先轉換的方式進行
  
  ● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ).
     
@@ -44,8 +57,8 @@
  remainder and save the result in a constant named remainder .
 
  作答：
-    let x : Int = 10
-    let y : Int = 3
+    let x: Int = 10
+    let y: Int = 3
     let remainder = x % y
  --------------------------------
  
@@ -53,10 +66,10 @@
  Ex:var x=10.=>var x:Int=10.
  
  作答：
-    var flag = true                        => var flag : Bool = true
-    var inputString = "Hello world."       => var inputString : String = "Hello world."
-    let bitsInBite = 8                     => let bitsInBite : Int = 8
-    let averageScore = 86.8                => let averageScore : Double = 86.8
+    var flag = true                        => var flag: Bool = true
+    var inputString = "Hello world."       => var inputString: String = "Hello world."
+    let bitsInBite = 8                     => let bitsInBite: Int = 8
+    let averageScore = 86.8                => let averageScore: Double = 86.8
  --------------------------------
  
  7. What is Type Inference in Swift?

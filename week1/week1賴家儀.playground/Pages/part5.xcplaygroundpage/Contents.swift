@@ -36,7 +36,7 @@ that we want to give the argument b a default value of 10.
     func move(animal name: String, action moving: String){
         print("\(name),\(moving)")
     }
-    move(animal:"bird", action:"fly")
+    move(animal: "bird", action: "fly")
   --------------------------------
  
 4. Please declare a function named greet with person as an argument label and
@@ -46,7 +46,7 @@ greet(person: "Luke")
 It will return the string: “Hello, Luke”.
  
  作答：
-    func greet(person name:String) -> String{
+    func greet(person name: String) -> String{
         return "Hello, \(name)"
     }
     greet(person: "Luke")
