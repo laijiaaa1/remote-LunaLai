@@ -30,7 +30,7 @@
    
  作答：
     將整數轉換為浮點數
-    let average = (Double(x + y) / 2)
+*   let average = (Double(x + y) / 2)
  
     *** Double((x + y) / 2) 跟 (Double(x + y) / 2) 的結果差異：
     Double((x + y) / 2)
@@ -65,7 +65,7 @@
  6. Swift is a very powerful language that can infer the data type for you ( Type Inference ) while we still need to know the basics well. Please change the following codes into the ones with the type annotation.
  Ex:var x=10.=>var x:Int=10.
  
- 作答：
+* 作答：
     var flag = true                        => var flag: Bool = true
     var inputString = "Hello world."       => var inputString: String = "Hello world."
     let bitsInBite = 8                     => let bitsInBite: Int = 8

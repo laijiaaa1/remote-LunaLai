@@ -26,7 +26,7 @@
     myFriends.swapAt(2, 0)
     myFriends.swapAt(2, 1)
  
- 方法二、(有想起來的話用這個)
+* 方法二、(有想起來的話用這個)
     let change = myFriends.remove(at: 2)
     myFriends.insert(change, at: 0)
   --------------------------------
@@ -70,7 +70,7 @@
      var myCountryNumber: [String: Int] = ["TW": 886]
   --------------------------------
  
- 10. Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively.
+* 10. Please add three values 1, 44, 81 to myCountryNumber for keys ‘US’, ‘GB’, ‘JP’ respectively.
  
  作答：
     let addCountries: [String: Int] = ["US": 1, "GB": 44, "JP": 81]
@@ -85,7 +85,7 @@
  方法一、
     myCountryNumber.updateValue(0, forKey: "GB")
  
- 方法二、(有想起來的話用這個)
+* 方法二、(有想起來的話用這個)
     myCountryNumber["GB"] = 0
  
  *** 0 & nil 差異：
@@ -108,7 +108,7 @@
  作答：
     dictionary.removeValue(forKey: 鍵值)
         例：dictionary.removeValue(forKey: "US")
-    dictionary[鍵值] = nil
+*    dictionary[鍵值] = nil
         例：myCountryNumber["US"] = nil
   --------------------------------
  

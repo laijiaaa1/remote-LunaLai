@@ -45,12 +45,18 @@
 
     ● git branch
      查看已存在的分支、新增分支
-        ＄git checkout ＋branchName       //切換分支
+        ＄git checkout ＋branchName          //切換分支
             -l列出分支
             -m重新命名分支
             -c複製分支
             -d刪除分支
-     
+*   ● git merge
+    合併分支
+    用於：合併回目的地的分支
+        $ git branch -v                     //查看目前在哪個分支
+        $ git checkout master               //切換到master分支
+        $ git merge branchName              //合併branchName這個分支進master分支
+ 
     ● git push [ repo_name ] [ branch_name ]
      將本地資料更新、推送至遠端
         $ git push origin master
@@ -108,7 +114,7 @@
         $ git init
     3.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
         $ git add .
-    4.提交版本（附加描述更改的提交消息）
+*   4.提交版本（附加描述更改的提交消息）
         $ git commit -m
     5.將預設分支從master重命名為main
         $ git branch -M main
@@ -120,7 +126,7 @@
         $ vim README.md
  
     9.  $ git add .
-    10. $ git commit -m
+*   10. $ git commit -m
     11. $ git push
     12.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
         $ git status
@@ -144,7 +150,7 @@
      4.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
         $ git add .
      5.提交版本（附加描述更改的提交消息）
-        $ git commit -m 
+*       $ git commit -m 
      6.將本地端資料推送至遠端GitHub儲存庫
         $ git push
      7.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
