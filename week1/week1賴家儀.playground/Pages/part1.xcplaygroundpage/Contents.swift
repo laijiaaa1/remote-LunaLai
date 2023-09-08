@@ -1,8 +1,10 @@
-//Part 1: Git & GitHub
-/*
+/*:
+### Part 1: Git & GitHub
+
  2. Here are some Git and GitHub commands we usually use in software development. Please explain the meanings and use cases of them.
 
  作答：
+ 
     ● git status
     顯示工作狀態
         -顯示哪些文件已更改、刪除、添加、重命名
@@ -50,7 +52,7 @@
             -m重新命名分支
             -c複製分支
             -d刪除分支
-*   ● git merge
+    ● git merge
     合併分支
     用於：合併回目的地的分支
         $ git branch -v                     //查看目前在哪個分支
@@ -91,69 +93,74 @@
      檢視所有標籤、新增、刪除
         $ git tag ＋tagName ＋commitnName   // 新增標籤
         $ git tag -d ＋tagName             // 刪除標籤
- --------------------------------
-參考資料：
- https://git-scm.com/docs
+---
+ */
+/*
+ 參考資料：
+    https://git-scm.com/docs
  git cherry-pick：
     https://medium.com/%E7%A8%8B%E5%BC%8F%E4%B9%BE%E8%B2%A8/git-cherry-pick-%E4%BD%BF%E7%94%A8%E5%A0%B4%E6%99%AF-59ac61723bfe
  git tag：
- https://git-tutorial.readthedocs.io/zh/latest/tagging.html
- --------------------------------
- 
-3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
- 
- 方法一
-    一、建立 GitHub 儲存庫
-    於GitHub瀏覽器上，創建新存儲庫 New Repository
-    
-    二、上傳到 GitHub
-    開啟終端機
-    1.開啟欲存放repo的路徑
-        cd /Users/laijiaaa1/Documents/swift/remote
-    2.初始化建置git
-        $ git init
-    3.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
-        $ git add .
-*   4.提交版本（附加描述更改的提交消息）
-        $ git commit -m
-    5.將預設分支從master重命名為main
-        $ git branch -M main
-    6.將遠端存儲庫URL與名稱origin相關聯
-        $ git remote add origin https://github.com/laijiaaa1/remote.git
-    7.將本地主分支推送到名為origin的遠端GitHub存儲庫
-        $ git push -u origin main
-    8.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
-        $ vim README.md
- 
-    9.  $ git add .
-*   10. $ git commit -m
-    11. $ git push
-    12.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
-        $ git status
-         
- 方法二
-    一、建立 GitHub 儲存庫
-     於GitHub瀏覽器上，創建新存儲庫 New Repository
-     設定自述文件和權限
-     開啟終端機
-     3.開啟欲存放repo的路徑
-        $ cd /Users/laijiaaa1/Documents/swift
-     4.將github上已建立好的資料下載為資料夾
-        $ git clone https://github.com/laijiaaa1/Remote_LaiChia-I.git
-
-    二、上傳到 GitHub
-     1.將欲上傳GitHub之檔案移動至repo指定資料夾內
-     2.指定repo路徑資料夾
-        $ cd /Users/laijiaaa1/Documents/swift/Remote_LaiChia-i
-     3.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
-        $ vim README.md
-     4.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
-        $ git add .
-     5.提交版本（附加描述更改的提交消息）
-*       $ git commit -m 
-     6.將本地端資料推送至遠端GitHub儲存庫
-        $ git push
-     7.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
-        $ git status
- --------------------------------
+    https://git-tutorial.readthedocs.io/zh/latest/tagging.html
  */
+
+/*:
+---
+ 3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
+ 
+方法一
+ 
+        一、建立 GitHub 儲存庫
+            於GitHub瀏覽器上，創建新存儲庫 New Repository
+        
+        二、上傳到 GitHub
+            開啟終端機
+            1.開啟欲存放repo的路徑
+                cd /Users/laijiaaa1/Documents/swift/remote
+            2.初始化建置git
+                $ git init
+            3.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
+                $ git add .
+            4.提交版本（附加描述更改的提交消息）
+                $ git commit -m
+            5.將預設分支從master重命名為main
+                $ git branch -M main
+            6.將遠端存儲庫URL與名稱origin相關聯
+                $ git remote add origin https://github.com/laijiaaa1/remote.git
+            7.將本地主分支推送到名為origin的遠端GitHub存儲庫
+                $ git push -u origin main
+            8.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
+                $ vim README.md
+         
+            9.  $ git add .
+            10. $ git commit -m
+            11. $ git push
+            12.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
+                $ git status
+                 
+方法二
+ 
+        一、建立 GitHub 儲存庫
+             1.於GitHub瀏覽器上，創建新存儲庫 New Repository
+             2.設定自述文件和權限
+             開啟終端機
+             3.開啟欲存放repo的路徑
+                $ cd /Users/laijiaaa1/Documents/swift
+             4.將github上已建立好的資料下載為資料夾
+                $ git clone https://github.com/laijiaaa1/Remote_LaiChia-I.git
+
+        二、上傳到 GitHub
+             1.將欲上傳GitHub之檔案移動至repo指定資料夾內
+             2.指定repo路徑資料夾
+                $ cd /Users/laijiaaa1/Documents/swift/Remote_LaiChia-i
+             3.打開 README.md 檔，使用Vim文字編輯器編輯，編輯自述文件內容
+                $ vim README.md
+             4.將欲上傳的檔案及修改過後的文件添加入暫存區，所有更改暫存為下一次提交
+                $ git add .
+             5.提交版本（附加描述更改的提交消息）
+                $ git commit -m
+             6.將本地端資料推送至遠端GitHub儲存庫
+                $ git push
+             7.顯示存儲庫的狀態，檢視資料夾內文件的變化、檢視是否有暫存資料
+                $ git status
+*/
