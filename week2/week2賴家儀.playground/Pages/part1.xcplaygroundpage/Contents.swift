@@ -8,7 +8,7 @@ enum Gender{
     case underfined
 }
 class Animal{
-    var gender: Gender
+    let gender: Gender      //gender屬性基於enum的值保持不變，因此應使用let以表示不應該被賦予新值
     func eat(){
         print("I eat everything!")
     }
@@ -99,6 +99,7 @@ zoo.weeklyHot = horse
  
  - Convenience Initializer：遇到需補充的參數也需要被初始化時
  1. 在不必初始化所有屬性的情況下創建物件
+ 2. 便利初始值設定項調用指定的初始值設定項
          
         - (同上)
                  convenience init(newAnimalName: String) {
@@ -126,7 +127,8 @@ zoo.weeklyHot = horse
  ---
  6. What’s the difference between reference type and value type ?
 
-  - reference type:將值分配給變數/常量/函數時，不會複製引用類型，而是引用同一個實體。
+  - reference type:將值分配給變數/常量/函數時，不會複製引用類型，而是引用同一個實體，是一種數據類型，其值存儲為記憶體位置的引用。
+  - 包含： classes and closures
   - Class：（Reference Type）引用同一個Animale實體，當animal2 屬性變動時，animal1 也會跟著變動。
  */
          class Animalll {
@@ -150,7 +152,8 @@ zoo.weeklyHot = horse
         print(animal2.name)
                 //結果：animal1 ＆ animal2都是 "kitty"
 /*:
- - value type:將值分配給變數/常量/函數時，複製其值的類型。
+ - value type:將值分配給變數/常量/函數時，複製其值的類型，是其值直接存儲在記憶體中的數據類型。
+ - 包含：Int, Float, Double, Bool and structs
  - Struct：（Value Type）內容複製，雖然 animalb 是 animala 指派的，將內容複製一份過去，但兩者是完全獨立的實體，更改後的值不影響原始的值。
 
  */
@@ -216,7 +219,7 @@ zoo.weeklyHot = horse
 /*:
  ---
  8. What does self mean in an instance method and a type method respectively?
-
+- instance method：
     1. self等同於該實體本身，可在instance method中使用隱含的self屬性來引用作為自己
 
          func increment() {
@@ -259,7 +262,21 @@ zoo.weeklyHot = horse
                          self.study = study
                      }
                  }
+ - type method:
+ 1. 在instance method中使用 self 以區分實體屬性和參數，而type method則是為調用類別的靜態屬性和方法：
+ 
+         struct Math {
+             static func square(_ number: Double) -> Double {
+                 return number * number
+             }
+            static func callSquare() -> Double {
+                 return self.square(5.0) // 使用 self 調用靜態方法
+            }
+         }
+         或者：
+         let result = Math.square(5.0)  // 調用靜態方法(通常self是默認的，可直接使用類別名稱)
  ---
  參考資料：https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods
  */
+
 

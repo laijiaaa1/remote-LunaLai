@@ -5,22 +5,22 @@
  void in the protocol.
  */
 protocol PoliceMan {
-    func arrestCriminals() -> Void
+    func arrestCriminals()
 }
 protocol ToolMan{
-    func fixComputer() -> Void
+    func fixComputer()
 }
 struct Person: PoliceMan{
     var name: String
-    var toolMan: ToolMan {
+    var toolMan: ToolMan{
         return Engineer()
     }
-    func arrestCriminals() -> Void{
+    func arrestCriminals(){
         print("\(name) is a policeman who arrests criminals")
     }
 }
 struct Engineer: ToolMan{
-    func fixComputer() -> Void{
+    func fixComputer(){
         print("\(person.name) is an engineer who fixes computers")
     }
 }
