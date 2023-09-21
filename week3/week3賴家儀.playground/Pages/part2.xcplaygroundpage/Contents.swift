@@ -3,13 +3,12 @@
  this closure is to verify if the input is odd or not. Return true if it’s odd and vice versa.
  */
 
-//1
 var result = {(_ numbers: Int) -> Bool in
      numbers % 2 != 0
 }
 
-let odd = result(3)
-let even = result(10)
+let a = result(3)
+let b = result(10)
 
 
 
