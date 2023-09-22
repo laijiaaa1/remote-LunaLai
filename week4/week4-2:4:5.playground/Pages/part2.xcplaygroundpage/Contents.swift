@@ -55,17 +55,19 @@
  
     6. tableView(_:canEditRowAt:) -> Bool
         返回每個row是否可以編輯
-
+---
     7. tableView(_:canMoveRowAt:) -> Bool
         返回每個row是否可以移動（重新排序）
  
     8. tableView(_:sectionForSectionIndexTitle:at:) -> Int
-        返回特定標題和session index的索引
+        返回特定標題和session 的索引，可用於創建索引清單，讓使用者快速跳到特定section
         ✏️：
-             func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-                     return "Section \(sections[section])"
+             func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+                 if let sectionIndex = sectionTitles.firstIndex(of: title) {
+                     return sectionIndex
                  }
- 
+             }
+
     9. tableView(_:commit:forRowAt:) -> UITableViewCellEditingStyle
         指定行的插入.insert或刪除.delete
         ✏️：

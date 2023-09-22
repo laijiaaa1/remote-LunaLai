@@ -15,21 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="stationID" text="stationID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycl-tu-5SG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="id" text="stationID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycl-tu-5SG">
                                 <rect key="frame" x="137" y="203.33333333333334" width="116" height="36"/>
                                 <accessibility key="accessibilityConfiguration" identifier="stationID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="stationAddress" text="stationAddress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsp-df-EiP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="address" text="stationAddress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsp-df-EiP">
                                 <rect key="frame" x="134.66666666666666" y="589" width="120.66666666666666" height="21"/>
                                 <accessibility key="accessibilityConfiguration" identifier="stationAddress"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="stationName" text="stationName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFQ-7W-Uaf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="name" text="stationName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFQ-7W-Uaf">
                                 <rect key="frame" x="-18.333333333333343" y="274.33333333333331" width="426.66666666666674" height="95.666666666666686"/>
                                 <accessibility key="accessibilityConfiguration" identifier="stationName"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
@@ -49,9 +49,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="stationAddressLabel" destination="nsp-df-EiP" id="eBX-hM-CR7"/>
-                        <outlet property="stationIDLabel" destination="ycl-tu-5SG" id="ZN7-yO-7u5"/>
-                        <outlet property="stationNameLabel" destination="mFQ-7W-Uaf" id="cPu-Gj-MUX"/>
+                        <outlet property="stationAddressLabel" destination="nsp-df-EiP" id="PkL-Ua-r3s"/>
+                        <outlet property="stationIDLabel" destination="ycl-tu-5SG" id="eFH-zt-Rii"/>
+                        <outlet property="stationNameLabel" destination="mFQ-7W-Uaf" id="8bq-qT-hnc"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="O8R-q8-XZm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
